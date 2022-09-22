@@ -9,14 +9,14 @@
   },
   "params": [
     {
-      "name": "Population_Above",
+      "name": "higher_density",
       "value": 0,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 300000000,
-        "step": 100000,
-        "name": "Minimum Population: "
+        "max": 1000,
+        "step": 100,
+        "name": "Minimum Population Density: "
       }
     }
   ],
@@ -28,10 +28,10 @@
           "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week%209%20Homework/data/Population%20of%20ASEAN%20Countries%20in%202020.csv"
         },
         "key": "Country",
-        "fields": ["Population"]
+        "fields": ["Density"]
       }
     },
-    {"filter": "datum.Population > Population_Above"}
+    {"filter": "datum.Density > higher_density"}
   ],
   "projection": { 
     "type": "equirectangular"
@@ -41,18 +41,18 @@
       "mark": "geoshape",
       "encoding": {
       "color": {
-      "field": "Population",
+      "field": "Density",
       "type": "quantitative",
       "scale": {
         "type": "threshold",
-        "domain": [1000000, 10000000, 50000000, 100000000],
+        "domain": [100, 300, 500, 1000],
         "range": ["#E1D3BA", "#fdbe85",  "#fd8d3c", "#e6550d", "#90210F"]
       }
     },
 
       "tooltip": [
         {"field": "properties.admin", "type": "nominal", "title": "Country"},
-        {"field": "Population", "type": "quantitative", "title": "Density (Person/Km2)"}
+        {"field": "Density", "type": "quantitative", "title": "Density (Person/Km2)"}
       ]
     }}
   
