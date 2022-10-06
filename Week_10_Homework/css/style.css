@@ -1,45 +1,23 @@
 #title{
-	margin-left: 500px;
-	margin-bottom: -50px;
-	align-self: center;
-}
-
-#title2{
-	margin-left: 600px;
-	margin-bottom: -50px;
-	margin-top: 150px;
-	align-self: center;
-}
-
-body{
-	background-color: whitesmoke;
-}
-#container2{
-	background-color: cornsilk;
-	height: 50px;
-}
-
-#subtitle1{
-	margin-top: 150px;
 	margin-left: 100px;
 	margin-bottom: -50px;
-	align-self: left;
+	align-self: center;
 }
 
 #choropleth_map {
 	top:100px;
 	bottom: 100px; 
-	left: 180px;
+	left: 50px;
 	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
 #bar_chart {
-	top:100px;
+	top:130px;
 	bottom: 100px; 
 	left: 50px;
-	right: 50px;
+	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/
 }
