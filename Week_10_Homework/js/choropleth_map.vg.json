@@ -4,7 +4,7 @@
   "width": 1000,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_9_Homework/js/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "custom.geo"}
   },
   "params": [
@@ -25,7 +25,7 @@
       "lookup": "properties.admin",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_9_Homework/data/Population%20in%20Asia%202021.csv"
+          "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20in%20Asia%202021.csv"
         },
         "key": "Country",
         "fields": ["Density"]
