@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 450,
-    "height": 200,
+    "height": 250,
     "title": { "text": "Population Forecast of South-East Asia Countries from 2025-2045" },
     "data": {
     "url":
