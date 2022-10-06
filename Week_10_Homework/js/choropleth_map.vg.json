@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Asia Countries in 2021",
+  "title": "Population Density of Asia Countries in 2020",
   "width": 500,
   "height": 300,
   "data": {
