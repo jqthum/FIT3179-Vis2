@@ -29,7 +29,13 @@
             {"field": "Year", "type": "nominal"},
             {"field": "Density", "type": "quantitative", "title": "Density (Person/Km2)"}
           ]
-        }}
+        }},
+        {
+            "layer": [{
+                "mark": {"type": "text", "align": "left", "dx": 10, "fontStyle": "italic"},
+                "encoding": {"text": {"field": "Density", "type": "quantitative"}}
+              }]  
+        }
       
       ]
     }
