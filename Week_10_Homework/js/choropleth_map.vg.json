@@ -25,7 +25,7 @@
       "lookup": "properties.admin",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20in%20Asia%202021.csv"
+          "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20in%20Asia%202020.csv"
         },
         "key": "Country",
         "fields": ["Density"]
