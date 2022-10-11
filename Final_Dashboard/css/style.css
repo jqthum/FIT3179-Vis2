@@ -25,7 +25,7 @@
 .bar_chart_description{
 	padding-left: 750px;
 	width:25vw;
-	margin-top: -100px;
+	margin-top: -150px;
 	font-family: sans-serif;
 }
 
@@ -47,9 +47,8 @@
 .bar_chart_2_description{
 	padding-left: 100px;
 	width:30vw;
-	margin-top: -450px;
+	margin-top: -300px;
 	font-family: sans-serif;
-
 }
 
 #line_chart{
