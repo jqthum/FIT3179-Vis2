@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "title": { "text": "Population Forecast of South-East Asia Countries from 2025-2045" },
+    "data": {
+    "url":
+    "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20Forecast%20of%20South-East%20Asia%202025-2045.csv"
+    },
+    "encoding": {
+    "x": { "field": "Density", "type": "quantitative" },
+    "y": { "field": "Year", "type": "nominal" }
+    },
+    "layer":[ 
+        {
+          "mark": "bar",
+          "encoding": {
+          "color": {
+          "field": "Density",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [160, 170, 180],
+            "range": ["#BCC6CC", "#98AFC7", "#4863A0", "#05137A", "#151B54"]
+          }
+        },
+    
+          "tooltip": [
+            {"field": "Year", "type": "nominal"},
+            {"field": "Density", "type": "quantitative", "title": "Density (Person/Km2)"}
+          ]
+        }},
+        {
+            "layer": [{
+                "mark": {"type": "text", "align": "left", "dx": 10, "fontStyle": "italic"},
+                "encoding": {"text": {"field": "Density", "type": "quantitative"}}
+              }]  
+        }
+      
+      ]
+    }
+    

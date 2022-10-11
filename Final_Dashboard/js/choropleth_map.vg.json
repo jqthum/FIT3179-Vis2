@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Population Density of Asia Countries in 2020",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/js/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "custom.geo"}
+  },
+  "params": [
+    {
+      "name": "higher_density",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 1000,
+        "step": 100,
+        "name": "Minimum Population Density: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.admin",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20in%20Asia%202020.csv"
+        },
+        "key": "Country",
+        "fields": ["Density"]
+      }
+    },
+    {"filter": "datum.Density > higher_density"}
+  ],
+  "projection": { 
+    "type": "equirectangular"
+  },
+  "layer":[ 
+    {
+      "mark": "geoshape",
+      "encoding": {
+      "color": {
+      "field": "Density",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [100, 300, 500, 1000],
+        "range": ["#E1D3BA", "#fdbe85",  "#fd8d3c", "#e6550d", "#90210F"]
+      }
+    },
+
+      "tooltip": [
+        {"field": "properties.admin", "type": "nominal", "title": "Country"},
+        {"field": "Density", "type": "quantitative", "title": "Density (Person/Km2)"}
+      ]
+    }}
+  
+  ]
+}
