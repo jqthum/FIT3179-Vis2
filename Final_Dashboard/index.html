@@ -18,10 +18,9 @@
       <h1>Population in Asia Countries</h1>
     </div>
  </div>
+
 <div id="choropleth_map">
-
 <script type="text/javascript">
-
   var spec1 = "js/choropleth_map.vg.json";
   vegaEmbed('#choropleth_map', spec1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -30,15 +29,12 @@
 </div>
 
 <div id="bar_chart">
-
   <script type="text/javascript">
-
     var spec2 = "js/bar_chart.vg.json";
     vegaEmbed('#bar_chart', spec2).then(function(result) {
     }).catch(console.error);
   </script>
 </div>
-
 
 <div class="bar_chart_description">
   <p>From the bar chart on the left, we can see that the population densities
@@ -55,12 +51,9 @@
 </div>
 
 <div class="bar_chart_2_description">
- <p>
- The median age of South-East Asia countries will increase from 31.8 to 37.2,
+ <p> The median age of South-East Asia countries will increase from 31.8 to 37.2,
  which is considered relatively high from the year 2025 to 2045. 
-   
  </p>
-
 </div>
 
 <div id="line_chart">
@@ -72,20 +65,22 @@
 </div>
 
 <div class="line_chart_description">
- <p>
- From the above line chart, we are able to conclude that Philippines 
+ <p> From the above line chart, we are able to conclude that Philippines 
  has the highest population density among all the other ASEAN countries,
  which is within the range of 348 to 368 p/km2. It also increases gradually 
  throughout the years from 2016 to 2020.   
  </p>
 
- <p>
-On the other hand, Laos has the least population density among the ASEAN countries, 
+ <p> On the other hand, Laos has the least population density among the ASEAN countries, 
 which ranges from 30 to 32. From the line chart, we can see that Laos' 
 population density do not change much across the years however it did increase
 very minimally.
 </p>
 
+<p> The population densities for Singapore across the years are not visible on the
+line chart because the population densities are too large compared to other
+population densities.
+</p>
 </div>
 
 </body>

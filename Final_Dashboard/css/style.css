@@ -52,7 +52,7 @@
 }
 
 #line_chart{
-	top: 70px;
+	top: 200px;
 	bottom: -50px; 
 	margin-left: 650px;
 	padding-bottom: 100px;
@@ -60,7 +60,7 @@
 
 .line_chart_description{
 	padding-left: 100px;
-	width:30vw;
+	width:300vw;
 	margin-top: -10px;
 	font-family: sans-serif;
 }
