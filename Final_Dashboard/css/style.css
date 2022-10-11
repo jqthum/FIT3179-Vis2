@@ -14,7 +14,7 @@
 }
 
 #bar_chart {
-	top:90px;
+	top:120px;
 	bottom: 100px; 
 	left: 55px;
 	right: 50px;
@@ -23,7 +23,7 @@
 }
 
 .bar_chart_description{
-	padding-left: 800px;
+	padding-left: 900px;
 	width:25vw;
 	margin-top: -500px;
 	font-family: sans-serif;
@@ -38,7 +38,7 @@
 }
 
 #bar_chart_2{
-	top: 100px;
+	top: 180px;
 	bottom: -50px; 
 	margin-left: 650px;
 	padding-bottom: 100px;
