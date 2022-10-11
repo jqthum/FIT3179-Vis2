@@ -5,19 +5,64 @@
 }
 
 #choropleth_map {
-	top:100px;
+	top:80px;
 	bottom: 100px; 
-	left: 50px;
+	left: 140px;
 	right: 100px;
 	/*height: 1000px;
 	width: 800px;*/
 }
 
 #bar_chart {
-	top:100px;
+	top:75px;
 	bottom: 100px; 
-	left: 50px;
-	right: 100px;
+	left: 55px;
+	right: 50px;
 	/*height: 1000px;
 	width: 800px;*/
+}
+
+.bar_chart_description{
+	padding-left: 700px;
+	width:25vw;
+	margin-top: -300px;
+	font-family: sans-serif;
+}
+
+
+#subtitle2{
+	margin-top: 150px;
+	margin-left: 780px;
+	margin-bottom: -50px;
+	align-self: left;
+}
+
+#bar_chart_2{
+	top: 75px;
+	bottom: -50px; 
+	margin-left: 650px;
+	padding-bottom: 100px;
+}
+
+.bar_chart_2_description{
+	padding-left: 100px;
+	width:30vw;
+	margin-top: -450px;
+	font-family: sans-serif;
+
+}
+
+#line_chart{
+	top: 70px;
+	bottom: -50px; 
+	margin-left: 650px;
+	padding-bottom: 100px;
+}
+
+.line_chart_description{
+	padding-left: 100px;
+	width:30vw;
+	margin-top: -450px;
+	font-family: sans-serif;
+
 }
