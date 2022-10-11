@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 300,
+    "title": { "text": "Median Age Forecast of South-East Asia Countries from 2025-2045" },
+    "data": {
+    "url":
+    "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Final_Dashboard/data/Population%20Forecast%20of%20South-East%20Asia%202025-2045.csv"
+    },
+    "encoding": {
+    "x": { "field": "Year", "type": "nominal" },
+    "y": { "field": "Median_Age", "type": "quantitative" }
+    },
+    "layer":[ 
+        {
+          "mark": {"type": "bar", "width": 30, "cursor":"pointer"},
+          "encoding": {
+          "color": {
+          "field": "Median_Age",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [30, 32, 34, 36, 38],
+            "range": ["#BCC6CC", "#98AFC7", "#4863A0", "#05137A", "#151B54"]
+          }
+        },
+    
+          "tooltip": [
+            {"field": "Year", "type": "nominal"},
+            {"field": "Median_Age", "type": "quantitative", "title": "Median Age"}
+          ]
+        }},
+        {
+            "layer": [{
+                "mark": {"type": "text", "align": "left", "dx": -10,"dy": -10, "fontStyle": "italic"},
+                "encoding": {"text": {"field": "Median_Age", "type": "quantitative"}}
+              }]  
+        }
+      
+      ]
+    }
+    

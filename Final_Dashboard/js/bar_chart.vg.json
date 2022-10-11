@@ -13,7 +13,7 @@
     },
     "layer":[ 
         {
-          "mark": "bar",
+          "mark": {"type": "bar", "height": 30, "cursor":"pointer"},
           "encoding": {
           "color": {
           "field": "Density",
@@ -21,7 +21,7 @@
           "scale": {
             "type": "threshold",
             "domain": [160, 170, 180],
-            "range": ["#BCC6CC", "#98AFC7", "#4863A0", "#05137A", "#151B54"]
+            "range": ["#76FC60", "#3BEE1D", "#2CB615", "#175D0C"]
           }
         },
     
