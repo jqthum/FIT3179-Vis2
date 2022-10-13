@@ -110,7 +110,7 @@
           "type": "text",
           "fontWeight":"bold",
           "dx":-35,
-          "dy":-165
+          "dy":-150
         },
         "encoding": {
           "text": {
