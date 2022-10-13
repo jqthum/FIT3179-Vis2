@@ -6,6 +6,7 @@ body {
 	margin-left: 500px;
 	margin-bottom: -50px;
 	align-self: center;
+	font-family: fantasy;
 }
 
 #choropleth_map {
