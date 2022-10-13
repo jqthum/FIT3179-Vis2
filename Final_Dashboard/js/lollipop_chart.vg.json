@@ -102,7 +102,7 @@
             "filter":"datum.Year=='2045'"
           },
           {
-            "calculate": "'In year 2045, the population density will increase to 181'",
+            "calculate": "'In year 2045, the population density will increase to 181 p/km2'",
             "as": "text_annotation"
           }
         ],
