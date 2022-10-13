@@ -50,10 +50,11 @@ body {
 }
 
 .bar_chart_2_description{
-	padding-left: 100px;
+	left: 140px;
 	width:30vw;
 	margin-top: -120px;
 	font-family: sans-serif;
+	
 }
 
 #line_chart{

@@ -96,32 +96,6 @@
           
           "text": {"field": "Density", "type": "quantitative"}
         }
-      },
-      {
-        "transform": [
-          {
-            "filter":"datum.Year=='2045'"
-          },
-          {
-            "calculate": "'In year 2045, the population density will increase to 181 p/km2'",
-            "as": "text_annotation"
-          }
-        ],
-        "mark": {
-          "type": "text",
-          "fontWeight":"bold",
-          "dx":-35,
-          "dy":-150
-        },
-        "encoding": {
-          "text": {
-            "field": "text_annotation"
-          },
-          "color":{"value":"#FF6863"},
-          "size": {
-            "value": 14
-          }
-        }
       }
     ]
 }
