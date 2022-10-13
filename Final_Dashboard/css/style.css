@@ -43,11 +43,10 @@ body {
 }
 
 .bar_chart_2_description{
-	padding-left: 100px;
+	padding-left: 120px;
 	width:30vw;
-	margin-top: -300px;
+	margin-top: -250px;
 	font-family: sans-serif;
-	
 }
 
 #line_chart{
@@ -60,6 +59,6 @@ body {
 .line_chart_description{
 	padding-left: 100px;
 	width:70vw;
-	margin-top: 100px;
+	margin-top: 120px;
 	font-family: sans-serif;
 }
