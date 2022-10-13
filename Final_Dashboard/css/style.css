@@ -10,7 +10,7 @@ body {
 }
 
 #choropleth_map {
-	top:80px;
+	top:70px;
 	bottom: 100px; 
 	left: 140px;
 	right: 100px;
