@@ -29,15 +29,15 @@ body {
 }
 
 .lollipop_chart_description{
-	padding-left: 750px;
+	padding-left: 700px;
 	width:35vw;
-	margin-top: -300px;
+	margin-top: -280px;
 	font-family: sans-serif;
 }
 
 #bar_chart_2{
-	top: 120px;
-	bottom: -100px; 
+	top: 70px;
+	bottom: -70px; 
 	margin-left: 650px;
 	padding-bottom: 100px;
 }
