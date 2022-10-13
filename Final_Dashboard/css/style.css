@@ -21,7 +21,7 @@ body {
 #lollipop_chart {
 	top:120px;
 	bottom: 100px; 
-	left: 75px;
+	left: 100px;
 	right: 50px;
 	/*height: 1000px;
 	width: 800px;*/
@@ -29,7 +29,7 @@ body {
 
 .lollipop_chart_description{
 	padding-left: 750px;
-	width:25vw;
+	width:30vw;
 	margin-top: -150px;
 	font-family: sans-serif;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 #line_chart{
-	top: 200px;
+	top: 180px;
 	bottom: -50px; 
 	margin-left: 150px;
 	padding-bottom: 100px;
