@@ -1,0 +1,126 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20Forecast%20of%20South-East%20Asia%202025-2045.csv"},
+    "width": 600,
+    "height": 400,
+    "layer": [
+      {
+        "description": "Lollipop Stick",
+        "mark": {"type": "bar",  "width": {"band": 0.15}},
+        "encoding": {
+          "x": {
+           "field": "Year",
+            "type": "nominal",
+            "axis": {"labelAngle": -45}
+          },
+          "y": {
+             "field": "Density",
+            "type": "quantitative",
+            "axis": null
+          },
+          "color": {
+            "value": "lightgrey"
+          }
+        }
+      },
+      {
+        "description": "Lollipop",
+        "mark": {
+          "type": "point",
+          "tooltip": true,
+          "filled": true,
+          "opacity": 1
+        },
+        "encoding": {
+          "color": {
+            "field": "Density",
+            "type": "quantitative",
+            "scale": {
+              "range": [
+                "#e8bcf0",
+                "#e8bcf0",
+                "#e8bcf0",
+                "#e8bcf0",
+                "#ca5cdd"
+              ]
+            },
+            "legend": null
+          },
+          "x": {
+            "field": "Year",
+             "type": "nominal",
+             "title":"Year"
+           },
+           "y": {
+              "field": "Density",
+             "type": "quantitative",
+             "title":"Population Density","scale": {"domain": [0, 300]}
+           },
+           "size": {"value": 3000},
+           "tooltip": [
+            {
+                "field": "Year", 
+                "type": "nominal", 
+                "title": "Year"
+            },
+            {
+               "field": "Density",
+               "type": "quantitative",
+               "title": "Population Density",
+               "format": ".0f"
+            }
+           ]
+        }
+      },
+      {
+        "description": "Value label",
+        "mark": {
+          "type": "text",
+          "baseline": "top",
+          "dx": 0,
+          "dy": -5,"fontWeight":"bold"
+        },
+        "encoding": {
+          "color": {
+            "value": "Black"
+          },
+          "x": {
+            "field": "Year",
+             "type": "nominal"
+           },
+           "y": {
+                "field": "Density",
+                "type": "quantitative"
+           },
+          
+          "text": {"field": "Density", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter":"datum.Year=='2045'"
+          },
+          {
+            "calculate": "'In year 2045, the population density will increase to 181'",
+            "as": "text_annotation"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontWeight":"bold",
+          "dx":-35,
+          "dy":-165
+        },
+        "encoding": {
+          "text": {
+            "field": "text_annotation"
+          },
+          "color":{"value":"#FF6863"},
+          "size": {
+            "value": 14
+          }
+        }
+      }
+    ]
+}
