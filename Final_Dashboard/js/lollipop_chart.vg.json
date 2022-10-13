@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Week_10_Homework/data/Population%20Forecast%20of%20South-East%20Asia%202025-2045.csv"},
     "width": 550,
-    "height": 400,
+    "height": 350,
     "layer": [
       {
         "description": "Lollipop Stick",
