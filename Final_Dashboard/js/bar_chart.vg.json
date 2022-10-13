@@ -21,7 +21,7 @@
           "scale": {
             "type": "threshold",
             "domain": [160, 170, 180],
-            "range": ["#76FC60", "#3BEE1D", "#2CB615", "#175D0C"]
+            "range": ["#A1FBB0", "#8DEC9D", "#2CB615", "#175D0C"]
           }
         },
     

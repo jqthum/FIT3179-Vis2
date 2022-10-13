@@ -9,6 +9,7 @@ body {
 }
 
 #choropleth_map {
+	background-color: #DBF9FC;
 	top:80px;
 	bottom: 100px; 
 	left: 140px;
@@ -18,6 +19,7 @@ body {
 }
 
 #bar_chart {
+	background-color: #DBF9FC;
 	top:120px;
 	bottom: 100px; 
 	left: 55px;
@@ -56,6 +58,7 @@ body {
 }
 
 #line_chart{
+	background-color: #DBF9FC;
 	top: 200px;
 	bottom: -50px; 
 	margin-left: 150px;
