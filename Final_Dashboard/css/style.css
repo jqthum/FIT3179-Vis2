@@ -1,7 +1,9 @@
 body {
 	background-color: #FDFEFD;
 }
+
 #title{
+	font-family: fantasy;
 	margin-left: 500px;
 	margin-bottom: -50px;
 	align-self: center;
