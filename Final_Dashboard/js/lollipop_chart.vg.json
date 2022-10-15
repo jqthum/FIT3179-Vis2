@@ -68,7 +68,7 @@
             {
                "field": "Density",
                "type": "quantitative",
-               "title": "Population Density (p/km2)",
+               "title": "Population Density (person/km2)",
                "format": ".0f"
             }
            ]
