@@ -30,7 +30,7 @@
       "mark": {"type": "line", "cursor": "pointer"},
       "encoding": {
         "x": {"field": "Year", "type": "nominal"},
-        "y": {"field": "Density", "type": "quantitative", "title": "Population Density (person / km2)"},
+        "y": {"field": "Density", "type": "quantitative", "title": "Population Density (person/km2)"},
         "color": {"field": "Country", "type": "nominal"},
         "opacity": {
             "condition": {"param": "series", "value": 1},
