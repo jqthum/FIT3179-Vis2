@@ -3,7 +3,7 @@
     "width": 800,
     "height": 400,
     "title": { "text": "Population Density of ASEAN Countries 2016-2020" },
-    "config": {"title": {"fontSize": 15}},
+    "config": {"title": {"fontSize": 16}},
     "data": {
       "url": "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Final_Dashboard/data/Population%20of%20ASEAN%20Countries%202016-2020.csv"
     },      

@@ -4,7 +4,7 @@
     "width": 450,
     "height": 350,
     "title": { "text": "Population Forecast of South-East Asia Countries from 2025-2045" },
-    "config": {"title": {"fontSize": 15}},    
+    "config": {"title": {"fontSize": 16}},    
     "layer": [
       {
         "description": "Lollipop Stick",

@@ -3,7 +3,7 @@
     "width": 400,
     "height": 300,
     "title": { "text": "Median Age Forecast of South-East Asia Countries from 2025-2045" },
-    "config": {"title": {"fontSize": 15}},
+    "config": {"title": {"fontSize": 16}},
     "data": {
     "url":
     "https://raw.githubusercontent.com/jqthum/FIT3179-Vis2/main/Final_Dashboard/data/Population%20Forecast%20of%20South-East%20Asia%202025-2045.csv"
